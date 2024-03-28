@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCP1</title>
+    <link rel="stylesheet" href="style/style.css">  <!-- Menghubungkan file CSS-->
+</head>
+<body>
+    <div class="container">  
+        <div class="card">
+            <h1>Hallo Guyss</h1>    <!-- Heading 1-->
+            <h2>Ini dua makanan kesukaan aku</h2>    <!-- Heading 2-->
+            
+            <img src="assets/Rendang.jpg" alt="Rendang">    <!-- Gambar Rendang-->
+            <img src="assets/Opor.jpg" alt="Opor">     <!-- Gambar Opor-->
+
+            <!-- Paragraf 1-->
+            <p>Disini ada Rendang dan Opor yang sejak dulu sudah menjadi makanan kesukaan aku dari kecil.</p>
+            <!-- Paragraf 2-->
+            <p>Aku masukkan dua makanan ini disini, karena mengingat sudah dekat dengan lebaran dan bunda aku
+               selalu masak dua makanan ini, dan selalu aku orang pertama yang disuruh untuk mencicipinya.
+            </p>
+
+            <!-- Tombol untuk menampilkan alert-->
+            <button onclick="showAlert()">Lihat Disini</button>
+            <div class="alert" id="alertBox">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <strong>Maaf mas:</strong> saya buat apa adanya karna lagi diperjalanan naik bus ke sumatra .
+            </div>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+            document.getElementById("alertBox").style.display = "block";
+        }
+    </script>
+</body>
+</html>
